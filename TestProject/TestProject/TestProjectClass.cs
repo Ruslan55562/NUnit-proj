@@ -4,9 +4,9 @@ namespace TestProject
 {
     public class TestProjectClass
     {
-        static void Main()
+        static int Main()
         {
-           
+            return 0;
         }
         /*public static bool StringEqual(string p_first, string p_second)
         {

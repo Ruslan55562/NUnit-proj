@@ -59,12 +59,14 @@ namespace TestProject.Tests
             test(9, 8);
             test(122, 0);
             test(-4, -5);
-           
+
+
             void test(int FirstNumb, int SecondNumb)
             {
-                Assert.AreEqual(true, TestProjectClass.MoreThan(FirstNumb, SecondNumb), "The first number is less than second");
+                Assert.AreEqual(true, TestProjectClass.MoreThan(FirstNumb, SecondNumb), "The first number is less than second");             
             }
         }
+
     }
-    }
+}
 
