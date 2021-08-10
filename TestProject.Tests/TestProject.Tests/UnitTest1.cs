@@ -15,6 +15,8 @@ namespace TestProject.Tests
         {
             test("Hello", "Hello");
             test("123", "123");
+            test("%%%", "%%%");
+            test("How are you", "How are you");
 
             void test(string first, string second)
             {
