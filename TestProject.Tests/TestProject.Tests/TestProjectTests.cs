@@ -47,7 +47,7 @@ namespace TestProject.Tests
 
             static void test(string[] StrArr, string P_second)
             {
-                Assert.AreEqual(true, TestProjectClass.StringIsInArr(StrArr, P_second), "There is no such string in array");
+                Assert.AreEqual(true, TestProjectClass.StringIsInArr(StrArr, P_second), "There is no such word in array");
             }
         }
 
