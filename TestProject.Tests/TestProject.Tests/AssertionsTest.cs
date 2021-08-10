@@ -6,7 +6,7 @@ using System.Linq;
 namespace TestProject.Tests
 {
     [TestFixture]
-    public class TestProjectTests
+    public class AssertionsTest
     {
 
 
