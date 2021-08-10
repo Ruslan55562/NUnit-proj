@@ -11,7 +11,7 @@ namespace TestProject.Tests
 
 
         [Test]
-        public void Test1()
+        public void EqualStrings()
         {
             test("Hello", "Hello");
             test("123", "123");
@@ -24,7 +24,7 @@ namespace TestProject.Tests
             }
         }
         [Test]
-        public void Test2()
+        public void EqualArrays()
         {
             string[] first = { "Hello", "Hi" };
             string[] second = { "Hello", "Hi" };
@@ -38,7 +38,7 @@ namespace TestProject.Tests
         }
 
         [Test]
-        public void Test3()
+        public void Word_In_Array()
         {
             string[] first = { "Hello", "Hi", "How", "Are", "You" };
             string second = "How";
@@ -53,7 +53,7 @@ namespace TestProject.Tests
 
 
         [Test]
-        public void Test4()
+        public void Compare_two_numbers()
         {
             test(10, 5);
             test(9, 8);
