@@ -31,7 +31,7 @@ namespace TestProject.Tests
             test(first, second);
 
 
-            void test(string[] firstArr, string[] secondArr)
+            void test(string[] first, string[] second)
             {
                 Assert.AreEqual(true, TestProjectClass.StringArr(firstArr, secondArr), "The arrays aren't equal");
             }
@@ -45,7 +45,7 @@ namespace TestProject.Tests
             test(first, second);
 
 
-            void test(string[] StrArr, string P_second)
+            void test(string[] first, string second)
             {
                 Assert.AreEqual(true, TestProjectClass.StringIsInArr(StrArr, P_second), "There is no such string in array");
             }
@@ -61,7 +61,8 @@ namespace TestProject.Tests
             test(-4, -5);
 
 
-            void test(int FirstNumb, int SecondNumb)
+
+            void test(int first, int second)
             {
                 Assert.AreEqual(true, TestProjectClass.MoreThan(FirstNumb, SecondNumb), "The first number is less than second");             
             }
