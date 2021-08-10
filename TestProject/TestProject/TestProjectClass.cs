@@ -8,10 +8,10 @@ namespace TestProject
         {
            
         }
-        public static bool StringEqual(string p_first, string p_second)
+        /*public static bool StringEqual(string p_first, string p_second)
         {
             return p_first == p_second;
-        }
+        }*/
         public static bool StringArr(string [] f_arr,string [] s_arr)
         {
             for(int i=0;i<f_arr.Length;i++)

@@ -6,7 +6,7 @@ using System.Linq;
 namespace TestProject.Tests
 {
     [TestFixture]
-    public class TestProjectTests
+    public class AssertionsTest
     {
 
 
@@ -18,9 +18,9 @@ namespace TestProject.Tests
             test("%%%", "%%%");
             test("How are you", "How are you");
 
-            void test(string first, string second)
+            void test(string P_first, string P_second)
             {
-                Assert.AreEqual(first, second, "The strings aren't equal");
+                Assert.AreEqual(P_first, P_second, "The strings aren't equal");
             }
         }
         [Test]
@@ -31,10 +31,9 @@ namespace TestProject.Tests
             test(first, second);
 
 
-            void test(string[] first, string[] second)
+            void test(string[] firstArr, string[] secondArr)
             {
-                bool ActualResult = TestProjectClass.StringArr(first, second);
-                Assert.AreEqual(true, ActualResult, "The arrays aren't equal");
+                Assert.AreEqual(true, TestProjectClass.StringArr(firstArr, secondArr), "The arrays aren't equal");
             }
         }
 
@@ -46,10 +45,9 @@ namespace TestProject.Tests
             test(first, second);
 
 
-            void test(string[] first, string second)
+            void test(string[] StrArr, string P_second)
             {
-                bool actualResult = TestProjectClass.StringIsInArr(first, second);
-                Assert.AreEqual(true, actualResult, "There is no such string in array");
+                Assert.AreEqual(true, TestProjectClass.StringIsInArr(StrArr, P_second), "There is no such string in array");
             }
         }
 
@@ -62,12 +60,9 @@ namespace TestProject.Tests
             test(122, 0);
             test(-4, -5);
            
-
-
-            void test(int first, int second)
+            void test(int FirstNumb, int SecondNumb)
             {
-                bool actualResult = TestProjectClass.MoreThan(first, second);
-                Assert.AreEqual(true, actualResult, "The first number is less than second");
+                Assert.AreEqual(true, TestProjectClass.MoreThan(FirstNumb, SecondNumb), "The first number is less than second");
             }
         }
     }
