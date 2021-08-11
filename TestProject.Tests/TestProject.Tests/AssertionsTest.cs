@@ -40,7 +40,7 @@ namespace TestProject.Tests
         }
 
         [Test]
-        public void Word_In_Array()
+        public void Word_In_List()
         {
             List<string> firstLst = new List <string>{ "Hello", "Hi", "How", "Are", "You" };
             string second = "How";
